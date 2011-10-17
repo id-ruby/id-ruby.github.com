@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Just some plain codes and beyond | {{ page.title }}</title>
+  <link href="/css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/css/application.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/css/page.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/jquery.github.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/twitter.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  
+  <div class="header">
+    <div class="wrapper">
+      <h2 class="tagline">Just some plain codes and beyond</h2>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="wrapper">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about" class="">About</a></li>
+        <li><a href="/projects" class="">Projects</a></li>
+        <li><a href="/archive" class="">Archive</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="body">
+	<div class="wrapper">
+	  <div class="docs">
+	   	{{ content }}
+	  </div>
+	  {% include sidebar.html %}	  
+	</div>	
+  </div>
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+    var links = document.getElementsByTagName('a');
+    var query = '?';
+    for(var i = 0; i < links.length; i++) {
+    if(links[i].href.indexOf('#disqus_thread') >= 0) {
+        query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    }
+    }
+    document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/bintangjatuh/get_num_replies.js' + query + '"></' + 'script>');
+})();
+//]]>
+  {% include analytics.html %}
+</body>
+</html>

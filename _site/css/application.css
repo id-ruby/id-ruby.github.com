@@ -1,0 +1,86 @@
+/* Basic Layout */
+html, body {
+  background: #fff;	
+  height: 100%;
+}
+
+.header,
+.footer,
+.headline {
+  position: relative;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* header */
+.header {
+  background: #32633B;
+  text-shadow: #0d131a 0 1px 0;
+}
+
+.header .wrapper {
+  height: 100px;
+}
+
+.header h2.tagline {
+  position: absolute;
+  top: 30px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: normal;
+  font-family: 'Museo100';
+  border: 0;
+  padding: 0;
+}
+
+/* nav */
+.nav {
+  background: #315037;
+  text-shadow: #070f1b 0 1px 0;
+}
+
+.nav .wrapper {
+  height: 40px;
+}
+
+.nav ul {
+  list-style: none;	
+}
+
+.nav li {
+  float: left;
+  padding: 5px 2px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.nav li a {
+  display: block;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+.nav li a:hover {
+  background: #52935E;
+  text-decoration: none;
+}
+
+.nav li a.current {
+  background: #32633B;
+  box-shadow: inset 0 1px 2px #1d2b3a;
+  -moz-box-shadow: inset 0 1px 2px #1d2b3a;
+  -webkit-box-shadow: inset 0 1px 2px #1d2b3a;
+}
+
+/* body */
+.body {
+  background: #fff;
+}

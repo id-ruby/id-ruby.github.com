@@ -1,0 +1,6 @@
+---
+layout: post
+title: "Ruby Metaprogramming Example"
+---
+
+<script src="https://gist.github.com/908467.js?file=metaprogramming.rb"></script>

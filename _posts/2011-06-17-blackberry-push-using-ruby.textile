@@ -1,0 +1,7 @@
+---
+layout: post
+title: "Blackberry Push Message using Ruby"
+---
+
+<script src="https://gist.github.com/1031278.js?file=blackberry_push.rb"></script>
+

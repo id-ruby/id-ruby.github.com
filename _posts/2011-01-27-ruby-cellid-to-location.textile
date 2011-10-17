@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Navigation Without GPS Using Ruby and Google API"
+---
+
+<script src="https://gist.github.com/908473.js?file=navigation.rb"></script>
+
+Hasilnya berupa JSON dengan format seperti di bawah ini, akurasi akan semakin kecil nilainya jika parameter cell_towers semakin banyak.
+<script src="https://gist.github.com/908475.js?file=navigation_result.json"></script>

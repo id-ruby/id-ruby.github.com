@@ -1,0 +1,16 @@
+---
+layout: post
+title: "SAMSUNG to produce "Ruby on Rails in Silicon" System on a Chip"
+---
+
+Samsung Electronics, Co., Ltd., one of the worlds greatest advanced semiconductor producer, announced the latest of it's popular ARM11 based System on a Chip (SoC) solutions, the RORIS6440 "Rails in Silicon" web-application processor. Based on the Samsung advanced 45nm low power CMOS process technology, the "Rails in Silicon" chip offers a high performance, low power and cost effective solution for next generation web applications.
+
+The System on a Chip consists of 4 subsystems occupying each 1/4 of the SoC :
+# The ruby language interpreter in silicon
+# The ruby gems subsystem (Xilinx FPGA)
+# The Rails Framework subsystem
+# The normalization FPGA (normalizing inconsistencies of the other 3 subsystems)
+
+The RORIS6440 web-application processor is available in samples for selected customers. It is scheduled for volume shipment in the fourth quarter of this year. The chip is housed in a 13¥é13 FBGA package witha ball pitch of 0.65mm.
+
+via "http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/387196":http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/387196
