@@ -3,6 +3,7 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+
  <title>id-ruby</title>
  <link href="http://id-ruby.org/atom.xml" rel="self"/>
  <link href="http://id-ruby.org/"/>
@@ -12,6 +13,8 @@ layout: nil
    <name>id-ruby</name>
    <email>contact@id-ruby.org</email>
  </author>
+
+ {% for post in site.posts limit:20 %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="http://id-ruby.org{{ post.url }}"/>
@@ -23,4 +26,5 @@ layout: nil
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
+
 </feed>
