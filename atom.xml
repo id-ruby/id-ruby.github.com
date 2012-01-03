@@ -1,0 +1,26 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>id-ruby</title>
+ <link href="http://id-ruby.org/atom.xml" rel="self"/>
+ <link href="http://id-ruby.org/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://id-ruby.org/</id>
+ <author>
+   <name>id-ruby</name>
+   <email>contact@id-ruby.org</email>
+ </author>
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://id-ruby.org{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://id-ruby.org{{ post.id }}</id>
+   <author>
+     <name>{{ post.author }}</name>
+   </author>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+</feed>
