@@ -1,0 +1,183 @@
+/*******************************************************************************
+
+	Title: 
+	Date:  
+	Author: Suitmedia (http://www.suitmedia.com)
+
+********************************************************************************
+
+	1 Reset
+	2 Clearfix
+	3 Base styles
+	4 Common styles
+	5 Header
+	6 Content
+		6.1 Home
+	7 Sidebar
+	8 Footer
+	9.Print
+
+*******************************************************************************/
+
+
+/* 1 Reset
+------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+	content: none;
+}
+
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+
+/* 2 Clearfix
+------------------------------------------------------------------------------*/
+
+.clearfix:after { 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; 
+}
+
+
+/* 3 Base styles
+------------------------------------------------------------------------------*/
+
+body { 
+	font: 75%/1.3333 Arial, Helvetica, sans-serif; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+a:hover, a:active {
+	outline: none;
+}
+
+a, a:active, a:visited {
+	color: #607890;
+}
+
+a:hover {
+	color: #036;
+}
+
+
+/* 4 Common styles
+------------------------------------------------------------------------------*/
+
+
+
+/* 5 Header
+------------------------------------------------------------------------------*/
+
+
+
+/* 6 Content
+------------------------------------------------------------------------------*/
+
+
+/* 7 Sidebar
+------------------------------------------------------------------------------*/
+
+
+/* 8 Footer
+------------------------------------------------------------------------------*/
+
+
+
+/* 9 Print
+------------------------------------------------------------------------------*/
+
+@media print {
+
+	body { 
+		font: normal normal 12pt/1.5em "Times New Roman", Times, serif; 
+	}
+
+	a[href]:after { 
+		content: " (" attr(href) ") "; 
+		font-size: 90%; 
+	}
+
+	a[href^="/"]:after { 
+		content: " (http://domain.com" attr(href) ") "; 
+	}
+
+	.hide { 
+		display: none !important; 
+	}
+	
+}	
+
+
+
+
+
+
+
+
+
+
