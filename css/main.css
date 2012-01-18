@@ -390,6 +390,9 @@ nav[role="navigation"] .active a {
 
 .preview-post {
     float: left;
+}
+
+.preview-post.with-image {
     width: 70.86330935251799%; /* 394/556 */
 }
 
@@ -397,15 +400,18 @@ nav[role="navigation"] .active a {
     padding-bottom: 10px;
 }
 
-.post-preview a.more {
+.post-preview .more {
+    margin-top: 10px;
+    clear: both;
+}
+
+.post-preview .more a {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3pxk;
     background: #cc6666;
-    clear: both;
     color: #fff;
     display: inline-block;
-    margin-top: 10px;
     padding: 1.7985611510791366%;
 }
 
@@ -931,7 +937,7 @@ footer[role="contentinfo"] .copy small {
         width: auto;
     }
 
-    .post-preview a {
+    .post-preview .more {
         margin-top: 20px;
     }
 

@@ -11,19 +11,22 @@ layout: default
     </ul>
     <div class="post-preview">
       {% if post.image %}
+        {% assign preview_class = "with-image" %}
         <div class="image-post">
           <img src="{{ post.image }}">
         </div>
       {% endif %}
-      <div class="preview-post">
+      <div class="preview-post {{ preview_class }}">
         {% if post.excerpt %}
-          <p>{{ post.excerpt }}</p>
+          {{ post.excerpt }}
         {% else %}
           {{ post.content }}
         {% endif %}
       </div>
       {% if post.excerpt %}
-        <a class="more" href="{{ post.url }}">Read more</a>
+        <div class="more">
+          <a class="more" href="{{ post.url }}">Read more</a>
+        </div>
       {% endif %}
     </div>
   </article>
