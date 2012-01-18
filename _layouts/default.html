@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>id-ruby - {{ page.title }}</title>
-  <meta http-equiv="cache-control" content="no-cache" />
-  <meta http-equiv="pragma" content="no-cache" />
-  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-  <meta http-equiv="expires" content="0">
-  <meta name="description" content="id-ruby" />
-  <meta name="keywords" content="ruby, indonesia, community, komunitas, programmer" />
-  <meta name="author" content="id-ruby" />
-  <link href="/atom.xml" rel="alternate" title="id-ruby" type="application/atom+xml" />
-</head>
-<body>
-{% include header.html %}
-{% include secondary_links.html %}
-{{ content }}
-{% include footer.html %}
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ID Ruby</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+        <link rel="Shortcut Icon" type="image/ico" href="img/favicon.png" />
+        <link rel="stylesheet" media="all" href="/css/main.css" />
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!--[if lte IE 7]>
+            <link rel="stylesheet" media="all" href="/css/ie.css" />
+        <![endif]-->
+    </head>
+    <body>
+        {% include header.html %}
+        {% include content.html %}
+        {% include footer.html %}
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
 </html>

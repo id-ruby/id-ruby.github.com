@@ -4,4 +4,5 @@ server_port: 3000
 destination: ./_site
 permalink: pretty
 pygments: true
-lsi: true
+lsi: false
+paginate: 10

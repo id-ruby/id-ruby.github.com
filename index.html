@@ -2,6 +2,30 @@
 title: Komunitas Rubyist Indonesia
 layout: default
 ---
-<article>
-omg content
-</article>
+{% for post in paginator.posts %}
+    <article class="post">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <ul class="post-meta">
+            <li><a href="{{ post.url }}">{{ post.date || date_to_string }}</a></li>
+            <li><a href="{{ post.url }}">By {{ post.author }}</a></li>
+        </ul>
+        <div class="post-preview">
+            {% if post.image %}
+                <div class="image-post">
+                    <img src="{{ post.image }}">
+                </div>
+            {% endif %}
+            <div class="preview-post">
+                {% if post.excerpt %}
+                    <p>{{ post.excerpt }}</p>
+                {% else %}
+                    {{ post.content }}
+                {% endif %}
+            </div>
+            {% if post.excerpt %}
+                <a class="more" href="{{ post.url }}">Read more</a>
+            {% endif %}
+        </div>
+    </article>
+{% endfor %}
+{% include pagination.html %}
