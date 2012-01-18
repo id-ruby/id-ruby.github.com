@@ -638,7 +638,7 @@ nav[role="navigation"] .active a {
 	margin: 0 1.7953321364452424% 0 0; /* 10/557 */
 	padding: 4px 0 0 0;
 	text-align: center;
-	width: 6.283662477558348%; /* 35/557 */
+	width: 6.383662477558348%; /* 35/557 */
 }
 
 .upcoming header .date span {
@@ -691,7 +691,7 @@ nav[role="navigation"] .active a {
 	margin: 0 1.7953321364452424% 0 0;
 	padding: 4px 0 0 0;
 	text-align: center;
-	width: 6.283662477558348%;
+	width: 6.383662477558348%;
 }
 
 .past .date span {
@@ -838,6 +838,46 @@ footer[role="contentinfo"] .copy small {
 		float: right;
 	}
 	
+	.filter {
+		border-bottom: none;
+	}
+	
+	.upcoming header .date {
+		background: none;
+		border-bottom: 1px solid #ccc;
+		color: #999;
+		float: none;
+		font-size: 0.875em;
+		height: auto;
+		margin-bottom: 1.2em;
+		text-align: left;
+		width: auto;
+	}
+	
+	.upcoming header .date span {
+		color: #999;
+	}
+	
+	.upcoming p {
+		padding: 0;
+	}
+	
+	.past .date {
+		background: none;
+		border-bottom: 1px solid #ccc;
+		color: #999;
+		float: none;
+		font-size: 0.875em;
+		height: auto;
+		margin-bottom: 1.2em;
+		text-align: left;
+		width: auto;		
+	}
+	
+	.past .date span {
+		color: #999;
+	}
+	
 }
 
 @media screen and (max-width: 1024px) {
@@ -891,6 +931,46 @@ footer[role="contentinfo"] .copy small {
 		font-size: 1.125em;
 	}
 	
+	.filter {
+		border-bottom: none;
+	}
+
+	.upcoming header .date {
+		background: none;
+		border-bottom: 1px solid #ccc;
+		color: #999;
+		float: none;
+		font-size: 0.875em;
+		height: auto;
+		margin-bottom: 1.2em;
+		text-align: left;
+		width: auto;
+	}
+	
+	.upcoming header .date span {
+		color: #999;
+	}
+	
+	.upcoming p {
+		padding: 0;
+	}
+	
+	.past .date {
+		background: none;
+		border-bottom: 1px solid #ccc;
+		color: #999;
+		float: none;
+		font-size: 0.875em;
+		height: auto;
+		margin-bottom: 1.2em;
+		text-align: left;
+		width: auto;		
+	}
+	
+	.past .date span {
+		color: #999;
+	}
+		
 	.secondary {
 		display: none;		
 	}
@@ -965,6 +1045,10 @@ footer[role="contentinfo"] .copy small {
 	
 	.preview-post {
 		width: 60%;
+	}
+	
+	.past h2 {
+		padding-top: 40px;
 	}
 	
 }
