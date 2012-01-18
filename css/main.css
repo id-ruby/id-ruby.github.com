@@ -404,7 +404,8 @@ nav[role="navigation"] .active a {
     background: #cc6666;
     clear: both;
     color: #fff;
-    float: left;
+    display: inline-block;
+    margin-top: 10px;
     padding: 1.7985611510791366%;
 }
 
@@ -431,6 +432,7 @@ nav[role="navigation"] .active a {
 .pagination a {
     background: #fff;
     border: 1px solid #ccc;
+    display: inline-block;
     font-size: 0.857em;
     padding: 0.417em;	
 }
@@ -600,12 +602,15 @@ nav[role="navigation"] .active a {
         color-stop(1, rgb(204,101,101)),
         color-stop(0.52, rgb(204,51,51))
     );
+    background-color: rgb(204,101,101)
     border: 1px solid #cc3333;
     color: #fff;
     cursor: pointer;
     font-size: 14px;
+    overflow: visible;
     padding: 1em 3em;
     text-transform: uppercase;
+    width: auto;
 }
 
 
@@ -638,7 +643,7 @@ nav[role="navigation"] .active a {
     float: left;
     font-size: 11px;
     height: 51px;
-    margin: 0 1.7953321364452424% 0 0; /* 10/557 */
+    margin: 0 1.6953321364452424% 0 0; /* 10/557 */
     padding: 4px 0 0 0;
     text-align: center;
     width: 6.383662477558348%; /* 35/557 */
@@ -691,7 +696,7 @@ nav[role="navigation"] .active a {
     float: left;
     font-size: 11px;
     height: 51px;
-    margin: 0 1.7953321364452424% 0 0;
+    margin: 0 1.6953321364452424% 0 0;
     padding: 4px 0 0 0;
     text-align: center;
     width: 6.383662477558348%;
@@ -825,26 +830,26 @@ footer[role="contentinfo"] .copy small {
 ------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 1025px) and (max-width: 1250px) {
-    
+
     nav[role="navigation"] {
         float: right;
     }
-    
+
     .global-search {
         clear: both;
         float: left;
         margin: 20px 0;
         width: 60%;
     }
-    
+
     .global-search .form-btn {
         float: right;
     }
-    
+
     .filter {
         border-bottom: none;
     }
-    
+
     .upcoming header .date {
         background: none;
         border-bottom: 1px solid #ccc;
@@ -856,15 +861,15 @@ footer[role="contentinfo"] .copy small {
         text-align: left;
         width: auto;
     }
-    
+
     .upcoming header .date span {
         color: #999;
     }
-    
+
     .upcoming p {
         padding: 0;
     }
-    
+
     .past .date {
         background: none;
         border-bottom: 1px solid #ccc;
@@ -876,11 +881,11 @@ footer[role="contentinfo"] .copy small {
         text-align: left;
         width: auto;		
     }
-    
+
     .past .date span {
         color: #999;
     }
-    
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -889,43 +894,43 @@ footer[role="contentinfo"] .copy small {
         margin: 20px;
         width: auto;
     }
-    
+
     header[role="banner"] .container {
         margin-top: 0;
     }
-    
+
     nav[role="navigation"] {
         float: right;
     }
-    
+
     .global-search {
         clear: both;
         float: left;
         width: 60%;
     }
-    
+
     .global-search .form-btn {
         float: right;
     }
-    
+
     #content {
         clear: both;
     }
-    
+
     #content .container {
         margin-top: 0;
     }
-    
+
     .primary {
         float: none;
         margin-top: 0;
         width: 100%;
     }
-    
+
     .image-post {
         width: auto;
     }
-    
+
     .post-preview a {
         margin-top: 20px;
     }
@@ -933,7 +938,7 @@ footer[role="contentinfo"] .copy small {
     .pagination a {
         font-size: 1.125em;
     }
-    
+
     .filter {
         border-bottom: none;
     }
@@ -949,15 +954,15 @@ footer[role="contentinfo"] .copy small {
         text-align: left;
         width: auto;
     }
-    
+
     .upcoming header .date span {
         color: #999;
     }
-    
+
     .upcoming p {
         padding: 0;
     }
-    
+
     .past .date {
         background: none;
         border-bottom: 1px solid #ccc;
@@ -969,15 +974,15 @@ footer[role="contentinfo"] .copy small {
         text-align: left;
         width: auto;		
     }
-    
+
     .past .date span {
         color: #999;
     }
-        
+
     .secondary {
         display: none;		
     }
-    
+
     footer[role="contentinfo"] .container {
         margin: 0 20px;
     }
@@ -988,56 +993,56 @@ footer[role="contentinfo"] .copy small {
         text-align: center;
         width: 80%;
     }
-    
+
     footer[role="contentinfo"] nav li {
         border: none;
         display: inline;
         float: none;
     }	
-    
+
     footer[role="contentinfo"] nav a {
         display: inline;
         line-height: 1.5;
     }
-    
+
     footer[role="contentinfo"] .copy {
         float: none;
         margin: 0 auto;
         text-align: center;
     }
-    
+
     footer[role="contentinfo"] .copy a {
         display: none;
     }
-    
+
     footer[role="contentinfo"] .copy a img {
         max-width: 100%;
     }
-    
+
     footer[role="contentinfo"] .copy p {
         display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
-    
+
     .top-menu p {
         display: none;
     }
-    
+
     nav[role="navigation"] {
         background: none;
         clear: both;
         float: none;
         padding-top: 40px;
     }
-    
+
     nav[role="navigation"] li {
         background: none;
         float: none;
         height: auto;
     }
-    
+
     nav[role="navigation"] a {
         color: #000;
         display: block;
@@ -1045,43 +1050,43 @@ footer[role="contentinfo"] .copy small {
         text-decoration: underline;
         text-shadow: none;
     }
-    
+
     .preview-post {
         width: 60%;
     }
-    
+
     .past h2 {
         padding-top: 40px;
     }
-    
+
 }
 
 @media screen and (max-width: 520px) {
-    
-    
+
+
     .top-nav {
         float: left;
     }
-    
+
     .preview-post {
         float: none;
         width: auto;
     }
-    
+
     .preview-post p {
         line-height: 1.5;
     }
-    
+
     .pagination {
         padding: 20px 0;
         position: relative;
         width: 100%;
     }
-    
+
     .pagination a {
         font-size: 0.857em;
     }
-    
+
     .pagination .prev,
     .pagination .next {
         float: none;
@@ -1089,7 +1094,7 @@ footer[role="contentinfo"] .copy small {
         top: 3.8em;
         width: 20%;
     }
-    
+
     .pagination .prev {
         left: 0;
     }
@@ -1097,29 +1102,29 @@ footer[role="contentinfo"] .copy small {
     .pagination .next {
         right: 0;	
     }
-    
+
     .pagination .paging {
         width: 100%;
     }
-    
+
     .comments-form input[type="text"] {
         float: none;
         width: 96%;
     }
-    
+
     .comments-form textarea {
         width: 97%;
     }
-    
+
     .comments-form .button {
         padding: 0;
     }
-    
+
 }
 
 @media screen and (max-width: 320px) {
 
-    
+
 }
 
 
@@ -1144,7 +1149,7 @@ footer[role="contentinfo"] .copy small {
     .hide { 
         display: none !important; 
     }
-    
+
 }	
 
 

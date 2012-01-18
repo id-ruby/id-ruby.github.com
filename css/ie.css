@@ -33,5 +33,13 @@ footer[role="contentinfo"] nav { zoom: 1; }
 ------------------------------------------------------------------------------*/
 
 .image-post img {
-	width: 100%;
+    width: 100%;
+}
+
+.upcoming header .date {
+    margin: 0 1.6953321364452424% 0 0; /* 10/557 */
+}
+
+.past .date {
+    margin: 0 1.6953321364452424% 0 0;
 }
