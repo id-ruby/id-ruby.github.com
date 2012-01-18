@@ -407,14 +407,19 @@ nav[role="navigation"] .active a {
 
 .pagination {
 	padding-top: 20px;
-	margin: 0 auto;
-	width: 70%;
+	margin: 0 4.57516339869281%;
 }
 
-.pagination div {
+.pagination .prev,
+.pagination .next {
 	float: left;
+	width: 20%;
 }
 
+.pagination .paging {
+	float: left;
+	width: 60%;
+}
 .pagination li {
 	float: left;
 	margin: 0 0.9345794392523364%;
@@ -874,8 +879,16 @@ footer[role="contentinfo"] .copy small {
 		width: 100%;
 	}
 	
+	.image-post {
+		width: auto;
+	}
+	
 	.post-preview a {
 		margin-top: 20px;
+	}
+
+	.pagination a {
+		font-size: 1.125em;
 	}
 	
 	.secondary {
@@ -950,12 +963,22 @@ footer[role="contentinfo"] .copy small {
 		text-shadow: none;
 	}
 	
+	.preview-post {
+		width: 60%;
+	}
+	
 }
 
 @media screen and (max-width: 520px) {
 	
+	
 	.top-nav {
 		float: left;
+	}
+	
+	.preview-post {
+		float: none;
+		width: auto;
 	}
 	
 	.preview-post p {
@@ -963,7 +986,33 @@ footer[role="contentinfo"] .copy small {
 	}
 	
 	.pagination {
-		width: 95%;
+		padding: 20px 0;
+		position: relative;
+		width: 100%;
+	}
+	
+	.pagination a {
+		font-size: 0.857em;
+	}
+	
+	.pagination .prev,
+	.pagination .next {
+		float: none;
+		position: absolute;
+		top: 3.8em;
+		width: 20%;
+	}
+	
+	.pagination .prev {
+		left: 0;
+	}
+
+	.pagination .next {
+		right: 0;	
+	}
+	
+	.pagination .paging {
+		width: 100%;
 	}
 	
 	.comments-form input[type="text"] {
@@ -981,8 +1030,9 @@ footer[role="contentinfo"] .copy small {
 	
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+@media screen and (max-width: 320px) {
 
+	
 }
 
 

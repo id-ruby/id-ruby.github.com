@@ -7,7 +7,26 @@
 ********************************************************************************
 
 /* Clearfix */
-.clearfix { zoom: 1; }
+.clearfix,
+.container,
+.top-menu,
+.top-nav,
+#content,
+.post-meta,
+.pagination,
+.post-preview,
+.secondary header,
+.comments,
+.author-meta,
+.comments li, 
+.comments-form p,
+.filter,
+.entry li,
+.entry-post,
+.upcoming header,
+.upcoming .entry-post,
+.past .preview-event,
+footer[role="contentinfo"] nav { zoom: 1; }
 
 
 /* Content
