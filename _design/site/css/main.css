@@ -401,7 +401,8 @@ nav[role="navigation"] .active a {
 	background: #cc6666;
 	clear: both;
 	color: #fff;
-	float: left;
+	display: inline-block;
+	margin-top: 10px;
 	padding: 1.7985611510791366%;
 }
 
@@ -428,6 +429,7 @@ nav[role="navigation"] .active a {
 .pagination a {
 	background: #fff;
 	border: 1px solid #ccc;
+	display: inline-block;
 	font-size: 0.857em;
 	padding: 0.417em;	
 }
@@ -597,12 +599,15 @@ nav[role="navigation"] .active a {
 		color-stop(1, rgb(204,101,101)),
 		color-stop(0.52, rgb(204,51,51))
 	);
+	background-color: rgb(204,101,101);
 	border: 1px solid #cc3333;
 	color: #fff;
 	cursor: pointer;
 	font-size: 14px;
+	overflow: visible;
 	padding: 1em 3em;
 	text-transform: uppercase;
+	width: auto;
 }
 
 
@@ -635,7 +640,7 @@ nav[role="navigation"] .active a {
 	float: left;
 	font-size: 11px;
 	height: 51px;
-	margin: 0 1.7953321364452424% 0 0; /* 10/557 */
+	margin: 0 1.6953321364452424% 0 0; /* 10/557 */
 	padding: 4px 0 0 0;
 	text-align: center;
 	width: 6.383662477558348%; /* 35/557 */
@@ -688,7 +693,7 @@ nav[role="navigation"] .active a {
 	float: left;
 	font-size: 11px;
 	height: 51px;
-	margin: 0 1.7953321364452424% 0 0;
+	margin: 0 1.6953321364452424% 0 0;
 	padding: 4px 0 0 0;
 	text-align: center;
 	width: 6.383662477558348%;

@@ -1,38 +1,38 @@
 {% if paginator.total_pages > 1 %}
-    <nav class="pagination">
-        {% if paginator.previous_page %}
-            {% if paginator.previous_page == 1 %}
-                <div class="prev"><a href="/">&laquo; Prev</a></div>
-            {% else %}
-                <div class="prev"><a href="/page{{ paginator.previous_page}}">&laquo; Prev</a></div>
-            {% endif %}
-        {% else %}
-            <div class="prev disabled"><a href="#">&laquo; Prev</a></div>
-        {% endif %}
-        <div class="paging">
-            <ol>
-                {% for page_num in (1..paginator.total_pages) %}
-                    {% if page_num == 1 %}
-                        {% assign path = "/" %}
-                        {% assign page_segment = "" %}
-                    {% else %}
-                        {% assign path = "/page" %}
-                        {% assign page_segment = page_num %}
-                    {% endif %}
+  <nav class="pagination">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <div class="prev"><a href="/">&laquo; Prev</a></div>
+      {% else %}
+        <div class="prev"><a href="/page{{ paginator.previous_page}}">&laquo; Prev</a></div>
+      {% endif %}
+    {% else %}
+      <div class="prev disabled"><a href="#">&laquo; Prev</a></div>
+    {% endif %}
+    <div class="paging">
+      <ol>
+        {% for page_num in (1..paginator.total_pages) %}
+          {% if page_num == 1 %}
+            {% assign path = "/" %}
+            {% assign page_segment = "" %}
+          {% else %}
+            {% assign path = "/page" %}
+            {% assign page_segment = page_num %}
+          {% endif %}
 
-                    {% if paginator.page == page_num %}
-                        {% assign page_class = "active" %}
-                    {% endif %}
+          {% if paginator.page == page_num %}
+            {% assign page_class = "active" %}
+          {% endif %}
 
-                    <li class="{{ page_class }}"><a href="{{ path }}{{ page_segment }}">{{ page_num }}</a></li>
-                {% endfor %}
-            </ol>
-        </div>
-        {% if paginator.next_page %}
-            <div class="next"><a href="/page{{ paginator.next_page }}">next &raquo;</a></div>
-        {% else %}
-            <div class="next disabled"><a href="#" disabled>next &raquo;</a></div>
-        {% endif %}
-    </nav>
+          <li class="{{ page_class }}"><a href="{{ path }}{{ page_segment }}">{{ page_num }}</a></li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% if paginator.next_page %}
+      <div class="next"><a href="/page{{ paginator.next_page }}">next &raquo;</a></div>
+    {% else %}
+      <div class="next disabled"><a href="#" disabled>next &raquo;</a></div>
+    {% endif %}
+  </nav>
 {% endif %}
-
+<!-- vim: set ft=liquid: -->

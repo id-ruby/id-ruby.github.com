@@ -1,8 +1,14 @@
 ---
-layout: default
+layout: full
 title: Learning Resources
 cat: resources
 ---
-<article>
-List learning resources here
-</article>
+
+<ul>
+  {% for post in site.categories.resources %}
+    <li>
+      <span class="postdate title">{{ post.date | date_to_string }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
