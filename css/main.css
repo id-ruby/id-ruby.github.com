@@ -331,6 +331,10 @@ nav[role="navigation"] .active a {
     width: 65.10638297872341%; /* 612/940 */
 }
 
+.primary > * {
+    margin: 0 4.57516339869281%;
+}
+
 .primary h2 {
     padding-bottom: 10px;
 }
@@ -343,7 +347,6 @@ nav[role="navigation"] .active a {
 .post {
     border-bottom: 1px dashed #bfbfbf;
     line-height: 1.5;
-    margin: 0 4.57516339869281%;
     padding: 20px 0; /* 28/612 */
 }
 
