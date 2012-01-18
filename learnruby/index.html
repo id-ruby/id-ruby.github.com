@@ -4,8 +4,13 @@ title: Learn ruby
 cat: learnruby
 ---
 
-<title> How to install Ruby 1.9.3 With Ruby on Rails in Ubuntu 11.10 </title>
-
-<article>
-Let's learn ruby
-</article>
+<ul class="posts">
+  {% for post in site.categories.events %}
+    <li>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+        <span class="postdate title">{{ post.date | date_to_string }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
