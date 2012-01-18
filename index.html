@@ -22,7 +22,9 @@ layout: default
                     {{ post.content }}
                 {% endif %}
             </div>
-            <a href="{{ post.url }}">Read more</a>
+            {% if post.excerpt %}
+                <a class="more" href="{{ post.url }}">Read more</a>
+            {% endif %}
         </div>
     </article>
 {% endfor %}

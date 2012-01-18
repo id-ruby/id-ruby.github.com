@@ -397,7 +397,7 @@ nav[role="navigation"] .active a {
     padding-bottom: 10px;
 }
 
-.post-preview a {
+.post-preview a.more {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3pxk;
