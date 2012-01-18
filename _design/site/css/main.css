@@ -413,7 +413,6 @@ nav[role="navigation"] .active a {
 
 .pagination div {
 	float: left;
-	margin: 0 0.9345794392523364%;
 }
 
 .pagination li {
@@ -980,6 +979,10 @@ footer[role="contentinfo"] .copy small {
 		padding: 0;
 	}
 	
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
 }
 
 
