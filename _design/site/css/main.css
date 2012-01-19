@@ -144,15 +144,26 @@ footer[role="contentinfo"] nav:after {
 
 body { 
 	background: url(../images/bg-texture.png);
-	color: #666;
+	color: #333;
 	font: 100%/1.3333 Arial, Helvetica, sans-serif; 
+	-webkit-text-size-adjust: none;
 }
 
 h1, h2 {
 	color: #663333;
 	font-family: 'rockwell', "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
 	font-size: 1.875em;
+	line-height: 1.2;
 	font-weight: normal;
+	padding-bottom: 10px;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p {
+	padding: 1em 0;
 }
 
 a, a:active {
@@ -194,6 +205,10 @@ input, select, textarea {
 	display: block;
 	line-height: 0;
 	text-indent: -999em;
+}
+
+object {
+	max-width: 100%;
 }
 
 
@@ -321,18 +336,14 @@ nav[role="navigation"] .active a {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.05);
 	background: #fff;
 	border: 1px solid #d7d7d7;
 	float: left;
 	padding: 28px 0;
 	width: 65.10638297872341%; /* 612/940 */
-}
-
-.primary h2 {
-	padding-bottom: 10px;
 }
 
 .secondary {
@@ -369,7 +380,7 @@ nav[role="navigation"] .active a {
 .post-meta a {
 	color: #666;
 	display: block;
-	font-size: 0.78571428571429em;
+	font-size: 0.857em;
 	line-height: 1;
 }
 
@@ -385,13 +396,14 @@ nav[role="navigation"] .active a {
 	max-width: 100%;
 }
 
-.preview-post {
+/*.preview-post {
 	float: left;
-	width: 70.86330935251799%; /* 394/556 */
-}
+	width: 70.86330935251799%; /* 394/556 *!/
+}*/
 
-.post-preview {
-	padding-bottom: 10px;
+.post-preview p {
+	font-size: 1em;
+	padding: 0;
 }
 
 .post-preview a {
@@ -403,7 +415,7 @@ nav[role="navigation"] .active a {
 	color: #fff;
 	display: inline-block;
 	margin-top: 10px;
-	padding: 1.7985611510791366%;
+	padding: 1.2%;
 }
 
 .pagination {
@@ -430,7 +442,7 @@ nav[role="navigation"] .active a {
 	background: #fff;
 	border: 1px solid #ccc;
 	display: inline-block;
-	font-size: 0.857em;
+	font-size: 1em;
 	padding: 0.417em;	
 }
 
@@ -448,14 +460,13 @@ nav[role="navigation"] .active a {
 	padding-bottom: 10px;
 }
 
-.post-full h1 {
-	padding-bottom: 10px;
-}
-
 .post-full h2 {
-	color: #666;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
 	line-height: 1;
-	padding: 20px 0;
+	padding: 20px 0 0;
 }
 
 .related-post {
@@ -526,7 +537,7 @@ nav[role="navigation"] .active a {
 .comment-box {
 	background: #f3f3f3;
 	border: 1px solid #dcdcdc;
-	padding: 3.333333333333333%;
+	padding: 0 3.333333333333333%;
 }
 
 .comment-box p {
@@ -545,7 +556,7 @@ nav[role="navigation"] .active a {
 }
 
 .comments-form p {
-	padding-bottom: 15px;
+	padding-bottom: 0;
 }
 
 .comments-form label {
@@ -553,6 +564,10 @@ nav[role="navigation"] .active a {
 	float: left;
 	padding-top: 5px;
 	width: 150px;
+}
+
+.comments-form label abbr {
+	color: red;
 }
 
 .comments-form input[type="text"] {
@@ -605,7 +620,7 @@ nav[role="navigation"] .active a {
 	cursor: pointer;
 	font-size: 14px;
 	overflow: visible;
-	padding: 1em 3em;
+	padding: 1em 2em;
 	text-transform: uppercase;
 	width: auto;
 }
@@ -614,15 +629,23 @@ nav[role="navigation"] .active a {
 /* 7.3 Page: Events
 ------------------------------------------------------------------------------*/
 
+.events {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
 .filter {
 	border-bottom: 1px solid #ccc;
-	margin-bottom: 20px;
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .filter p {
 	float: left;
-	padding-right: 10px;
+	padding-right: 1.7985611510791366%;
+}
+
+.entry {
+	padding-bottom: 20px;
 }
 
 .upcoming li {
@@ -658,7 +681,7 @@ nav[role="navigation"] .active a {
 
 .upcoming p {
 	float: left;
-	padding-left: 8.07899461400359%; /* 45/557 */
+	padding: 0 0 0 8.07899461400359%; /* 45/557 */
 	width: 60.14362657091562%; /* 335/557 */
 }
 
@@ -673,9 +696,8 @@ nav[role="navigation"] .active a {
 	max-width: 100%;
 }
 
-
-.past {
-	padding-bottom: 20px;
+.past h2 {
+	color: #555;
 }
 
 .past li {
@@ -706,6 +728,10 @@ nav[role="navigation"] .active a {
 .past .details {
 	float: left;
 	width: 91.92100538599641%;
+}
+
+.past .details p {
+	padding: 0;
 }
 
 
@@ -778,7 +804,8 @@ nav[role="navigation"] .active a {
 footer[role="contentinfo"] {
 	background: url(../images/bg-footer.png) repeat-x;
 	font-size: 0.857em;
-	height: 80px;	
+	height: 70px;	
+	overflow: hidden;
 	padding: 20px 0;
 }
 
@@ -815,7 +842,7 @@ footer[role="contentinfo"] .copy a {
 
 footer[role="contentinfo"] .copy p {
 	color: #333;
-	padding-bottom: 3px;
+	padding: 3px 0;
 }
 
 footer[role="contentinfo"] .copy small {
@@ -928,13 +955,6 @@ footer[role="contentinfo"] .copy small {
 		width: auto;
 	}
 	
-	.post-preview a {
-		margin-top: 20px;
-	}
-
-	.pagination a {
-		font-size: 1.125em;
-	}
 	
 	.filter {
 		border-bottom: none;
@@ -1023,10 +1043,6 @@ footer[role="contentinfo"] .copy small {
 
 @media screen and (max-width: 768px) {
 	
-	.top-menu p {
-		display: none;
-	}
-	
 	nav[role="navigation"] {
 		background: none;
 		clear: both;
@@ -1041,28 +1057,35 @@ footer[role="contentinfo"] .copy small {
 	}
 	
 	nav[role="navigation"] a {
-		color: #000;
+		border-bottom: 1px solid #ccc;
+		color: #555;
 		display: block;
 		padding: 10px 3em 10px 2.917em;
-		text-decoration: underline;
 		text-shadow: none;
 	}
 	
-	.preview-post {
+/*	.preview-post {
 		width: 60%;
 	}
-	
+*/
 	.past h2 {
 		padding-top: 40px;
 	}
 	
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 530px) {
 	
-	
+	.top-menu p {
+		display: none;
+	}
+		
 	.top-nav {
 		float: left;
+	}
+	
+	.post-meta a {
+		font-size: 0.786em;		
 	}
 	
 	.preview-post {
@@ -1075,13 +1098,14 @@ footer[role="contentinfo"] .copy small {
 	}
 	
 	.pagination {
+		margin: 0;
 		padding: 20px 0;
 		position: relative;
 		width: 100%;
 	}
 	
 	.pagination a {
-		font-size: 0.857em;
+		font-size: 1em;
 	}
 	
 	.pagination .prev,
@@ -1116,11 +1140,6 @@ footer[role="contentinfo"] .copy small {
 	.comments-form .button {
 		padding: 0;
 	}
-	
-}
-
-@media screen and (max-width: 320px) {
-
 	
 }
 
