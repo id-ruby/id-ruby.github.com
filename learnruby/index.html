@@ -1,16 +1,14 @@
 ---
-layout: default
-title: Learn ruby
+layout: full
+title: Learn Ruby
 cat: learnruby
 ---
 
-<ul class="posts">
+<ul>
   {% for post in site.categories.learnruby %}
     <li>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-        <span class="postdate title">{{ post.date | date_to_string }}</span>
-      </a>
+      <span class="postdate title">{{ post.date | date_to_string }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
