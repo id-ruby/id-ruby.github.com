@@ -363,7 +363,7 @@ nav[role="navigation"] .active a {
 }
 
 .post:first-child {
-	border-top: non;
+	border-top: none;
 	padding-top: 0;
 }
 
@@ -424,6 +424,7 @@ nav[role="navigation"] .active a {
 
 .pagination {
 	border-top: 1px dashed #BFBFBF;
+	margin: 20px 3.2679738562091505% 0;
 	padding-top: 20px;
 }
 
