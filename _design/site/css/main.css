@@ -142,8 +142,12 @@ footer[role="contentinfo"] nav:after {
 /* 4 Base styles
 ------------------------------------------------------------------------------*/
 
+html {
+	background: url(../images/bg-texture.png);	
+}
+
+
 body { 
-	background: url(../images/bg-texture.png);
 	color: #333;
 	font: 100%/1.3333 Arial, Helvetica, sans-serif; 
 	-webkit-text-size-adjust: none;
@@ -748,7 +752,7 @@ nav[role="navigation"] .active a {
 	background: url(../images/ico-sidebar-title.png) no-repeat;
 	float: left;
 	font-size: 1.2857em;
-	padding-left: 24px;
+	padding: 0 0 0 8%;
 }
 
 .secondary header a {
@@ -757,7 +761,7 @@ nav[role="navigation"] .active a {
 	display: block;
 	font-size: 0.875em;
 	margin-top: 6px;
-	padding-right: 13px;
+	padding-right: 4.3333333333333335%;
 }
 
 .secondary div {
