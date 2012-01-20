@@ -6,6 +6,13 @@
     </header>
     {{ site.categories.videos.first.smaller }}
   </div>
+  <div class="tweets">
+    <header>
+      <h2>Twitter</h2>
+      <a href="https://twitter.com/#!/search/id-ruby">More</a>
+    </header>
+    {% include twitter.html %}
+  </div>
   <div class="jobs">
     <header>
       <h2>Jobs</h2>
@@ -41,13 +48,6 @@
       <a href="#">More</a>
     </header>
     <img src="/images/bg-tag-dummy.png">
-  </div>
-  <div class="tweets">
-    <header>
-      <h2>Twitter</h2>
-      <a href="https://twitter.com/#!/search/id-ruby">More</a>
-    </header>
-    {% include twitter.html %}
   </div>
 </aside>
 <!-- secondary -->
