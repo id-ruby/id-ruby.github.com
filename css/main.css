@@ -487,6 +487,10 @@ nav[role="navigation"] .active a {
 	padding: 20px 0 0;
 }
 
+.post-full h3 {
+	font-size: ;
+}
+
 .related-post {
 	padding: 20px 4.57516339869281%;
 }
@@ -499,6 +503,7 @@ nav[role="navigation"] .active a {
 
 .related-post li {
 	background: url(/images/ico-arrow.png) no-repeat 0 5px;
+	font-size: 1.143em;
 	padding: 0 0 8px 16px;
 }
 
@@ -644,6 +649,7 @@ nav[role="navigation"] .active a {
 
 /* disqus */
 
+div#comment,
 .dsq-mobile .dsq-comment-text {
 	font-size: 1.143em !Important;
 }
