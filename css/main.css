@@ -1230,7 +1230,10 @@ footer[role="contentinfo"] .copy small {
     color: #999;
 }
 
-
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
 
 
 
