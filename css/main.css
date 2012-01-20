@@ -148,26 +148,28 @@ html {
 
 
 body { 
-	color: #333;
+	color: #555;
 	font: 100%/1.3333 Arial, Helvetica, sans-serif; 
 	-webkit-text-size-adjust: none;
 }
 
-h1, h2 {
-	color: #663333;
+h1, h2, h3 {
+	color: #888;
 	font-family: 'rockwell', "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
-	font-size: 1.875em;
+	font-size: 1.64em;
 	line-height: 1.2;
+    margin: 1em 0 0.75em;
 	font-weight: normal;
-	padding-bottom: 10px;
 }
 
-h3 {
-	font-size: 1em;
+h1 {
+    color: #633;
+    margin: 0;
+    font-size: 2em;
 }
 
-p {
-	padding: 1em 0;
+.post p, .post ul, .post ol {
+	margin: 0 0 1em;
 }
 
 a, a:active {
@@ -368,8 +370,16 @@ nav[role="navigation"] .active a {
 	padding-top: 0;
 }
 
-.post-meta {
-	margin-bottom: 20px;
+.prime {
+    margin-bottom: 2em;
+}
+
+.prime h2 {
+    margin: 0;
+}
+
+.post .post-meta {
+	margin: 0.5em 0 0;
 }
 
 .post-meta li {
@@ -386,11 +396,11 @@ nav[role="navigation"] .active a {
 .post-meta a {
 	color: #666;
 	display: block;
-	font-size: 0.857em;
+	font-size: 0.8em;
 	line-height: 1;
 }
 
-.post p {
+.primary {
 	font-size: 1.143em;	
 }
 
@@ -478,37 +488,25 @@ nav[role="navigation"] .active a {
 /* 7.2 Page: Content detail
 ------------------------------------------------------------------------------*/
 
-.post-full h2 {
-	color: #000;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.143em;
-	font-weight: bold;
-	line-height: 1;
-	padding: 20px 0 0;
-}
-
-.post-full h3 {
-	font-size: ;
-}
-
 .related-post {
 	padding: 20px 4.57516339869281%;
+    border: 1px dashed #ddd;
+    border-right: none;
+    border-left: none;
 }
 
 .related-post h2,
 .comments h2 {
-	color: #666;
-	padding-top: 0;
+	margin-top: 0;
+    padding: 0;
 }
 
 .related-post li {
 	background: url(/images/ico-arrow.png) no-repeat 0 5px;
-	font-size: 1.143em;
 	padding: 0 0 8px 16px;
 }
 
 .comments {
-	border-top: 1px dashed #BFBFBF;
 	margin: 0 4.57516339869281%;
 	padding: 20px 0;
 }
@@ -654,6 +652,10 @@ div#comment,
 	font-size: 1.143em !Important;
 }
 
+.primary #dsq-content h3 {
+    margin: 0 0 1em!important;
+}
+
 .dsq-brlink {
 	display: none;
 }
@@ -661,12 +663,6 @@ div#comment,
 
 /* 7.3 Page: Events
 ------------------------------------------------------------------------------*/
-
-.events {
-	border-top: 0;
-	border-bottom: 0;
-	padding-bottom: 0;
-}
 
 .filter {
 	border-bottom: 1px solid #ccc;
@@ -775,8 +771,10 @@ div#comment,
 .secondary header h2 {
 	background: url(/images/ico-sidebar-title.png) no-repeat;
 	float: left;
+    color: #663333;
 	font-size: 1.2857em;
 	padding: 0 0 0 8%;
+    margin: 0;
 }
 
 .secondary header a {
@@ -816,6 +814,9 @@ div#comment,
 
 .secondary .jobs h3 {
 	color: #333;
+    font-size: 1em;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 }
 
@@ -1213,6 +1214,9 @@ footer[role="contentinfo"] .copy small {
 	
 }	
 
+.postdate {
+    color: #999;
+}
 
 
 
