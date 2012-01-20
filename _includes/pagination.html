@@ -22,6 +22,8 @@
 
           {% if paginator.page == page_num %}
             {% assign page_class = "active" %}
+          {% else %}
+            {% assign page_class = "" %}
           {% endif %}
 
           <li class="{{ page_class }}"><a href="{{ path }}{{ page_segment }}">{{ page_num }}</a></li>

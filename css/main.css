@@ -786,7 +786,7 @@ div#comment,
 	padding-right: 4.3333333333333335%;
 }
 
-.secondary div {
+.secondary > div {
 	padding-bottom: 30px;
 }
 
