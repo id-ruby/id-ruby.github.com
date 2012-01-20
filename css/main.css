@@ -182,7 +182,7 @@ a:hover {
 	color: #036;
 }
 
-ul, ol, li {
+ul, ol {
 	list-style: none;
 }
 
@@ -370,6 +370,16 @@ nav[role="navigation"] .active a {
 	padding-top: 0;
 }
 
+.post ul {
+    list-style: disc;
+    margin-left: 1.25em;
+}
+
+.post ol {
+    list-style: decimal;
+    margin-left: 1.25em;
+}
+
 .prime {
     margin-bottom: 2em;
 }
@@ -382,9 +392,11 @@ nav[role="navigation"] .active a {
 	margin: 0.5em 0 0;
 }
 
-.post-meta li {
+.post .post-meta li {
+    list-style: none;
 	border-left: 1px solid #666;
 	float: left;
+    list-style: none;
 	padding: 0 1.4388489208633094%; /* 8/556 */
 }
 
