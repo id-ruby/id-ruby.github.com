@@ -743,7 +743,7 @@ nav[role="navigation"] .active a {
     padding-right: 13px;
 }
 
-.secondary div {
+.secondary > div {
     padding-bottom: 30px;
 }
 

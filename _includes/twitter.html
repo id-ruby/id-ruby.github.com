@@ -1,0 +1,31 @@
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: 'id-ruby',
+  interval: 500,
+  title: '',
+  subject: '',
+  width: 310,
+  height: 400,
+  theme: {
+    shell: {
+      background: '#dddddd',
+      color: '#333333'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#993333'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    behavior: 'default'
+  }
+}).render().start();
+</script>
+
