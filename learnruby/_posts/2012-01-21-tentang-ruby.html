@@ -16,7 +16,7 @@ excerpt: <p>Ruby merupakan bahasa yang seimbang. Pencipta Ruby, Yukihiro "Matz" 
 <p>Matz sering menyebutkan bahwa beliau sedang "mencoba membuat Ruby natural, bukan sederhana," dengan cara membuatnya mirip dengan kehidupan nyata.</p>
 
 <p>Berprinsip pada hal ini, Matz menambahkan:</p>
-<p>"Penampilan Ruby dari luar sederhana, tetapi sangat rumit di bagian dalam, seperti badan manusia kita ini <sup>1</sup>".
+<p>"Penampilan Ruby dari luar sederhana, tetapi sangat rumit di bagian dalam, seperti badan manusia kita ini <sup><a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773">1</a></sup>".
 
 <h2>Tentang Perkembangan Ruby</h2>
 
@@ -96,25 +96,24 @@ end
 
 <p>Ruby jarang menggunakan tanda baca dan biasanya cenderung menggunakan keyword berbahasa Inggris, biasanya beberapa tanda baca digunakan untuk memperjelas kode Ruby. Ruby tidak perlu deklarasi variabel. Ruby menggunakan aturan penamaan yang mudah untuk menyatakan scope suatu variabel.</p>
 
-<p>var adalah variabel lokal.<br/>
-@var adalah variabel instan.<br/>
-$var adalah variabel global.</p>
+<ul>
+	<li>var adalah variabel lokal.</li>
+	<li>@var adalah variabel instan.</li>
+	<li>$var adalah variabel global.</li>
+</ul>
 
 <p>Sigil-sigil tersebut bertujuan untuk memudahkan dan memperjelas ketika dibaca bagi programmer untuk mengidentifikasi fungsi dari setiap variabel. Sigil juga bisa menjadi hal yang tidak perlu bila harus digunakan pada setiap member instan self.</p>
 
 <h2>Langkah Selanjutnya</h2>
 
 <p>Ruby kaya fitur, antara lain sebagai berikut:</p>
-
-<p>Ruby memiliki fitur-fitur yang menangani exception, seperti Java atau Python, untuk mempermudah menangani error.</p>
-
-<p>Ruby menyediakan mark-and-sweep garbage collector untuk semua obyek Ruby. Tidak perlu me-maintain reference count pada library extension. Seperti yang Matz katakan, "Ini lebih baik untuk kesehatan Anda."</p>
-
-<p>Menulis extension C di Ruby lebih mudah daripada di Perl ataupun di Python, dengan API yang elegan untuk memanggil Ruby dari C. Ini termasuk memanggil Ruby embedded di software, untuk digunakan sebagai bahasa scripting. Interface SWIG juga tersedia.</p>
-
-<p>Ruby bisa load library extension secara dinamis jika Sistem Operasi mengijinkan.</p>
-
-<p>Ruby menyediakan fitur OS threading yang independent. Maka, untuk semua platform dimana Ruby berjalan, Anda juga punya multithreading, terlepas dari apakah Sistem Operasi mendukung multithreading atau tidak, bahkan pada MS-DOS sekalipun! Ruby sangat portable: Ruby kebanyakan dikembangkan di GNU/Linux, tetapi juga berjalan di banyak tipe UNIX, Mac OS X, Windows 95/98/Me/NT/2000/XP, DOS, BeOS, OS/2, dan lain-lain.</p>
+<ul>
+	<li>Ruby memiliki fitur-fitur yang menangani exception, seperti Java atau Python, untuk mempermudah menangani error.</li>
+	<li>Ruby menyediakan mark-and-sweep garbage collector untuk semua obyek Ruby. Tidak perlu me-maintain reference count pada library extension. Seperti yang Matz katakan, "Ini lebih baik untuk kesehatan Anda."</li>
+	<li>Menulis extension C di Ruby lebih mudah daripada di Perl ataupun di Python, dengan API yang elegan untuk memanggil Ruby dari C. Ini termasuk memanggil Ruby embedded di software, untuk digunakan sebagai bahasa scripting. Interface SWIG juga tersedia.</li>
+	<li>Ruby bisa load library extension secara dinamis jika Sistem Operasi mengijinkan.</li>
+	<li>Ruby menyediakan fitur OS threading yang independent. Maka, untuk semua platform dimana Ruby berjalan, Anda juga punya multithreading, terlepas dari apakah Sistem Operasi mendukung multithreading atau tidak, bahkan pada MS-DOS sekalipun! Ruby sangat portable: Ruby kebanyakan dikembangkan di GNU/Linux, tetapi juga berjalan di banyak tipe UNIX, Mac OS X, Windows 95/98/Me/NT/2000/XP, DOS, BeOS, OS/2, dan lain-lain.</li>
+</ul>
 
 <h3>Referensi</h3>
 

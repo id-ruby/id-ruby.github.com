@@ -1,0 +1,109 @@
+---
+layout: post
+title: Menguasai Ruby Dalam 20 Menit (Part 1)
+cat: learnruby
+author: Arie Kusumaatmaja
+nick: arie
+excerpt: <p>Tutorial mini Ruby ini seharusnya bisa diselesaikan dalam waktu kurang dari 20 menit. Dengan asumsi Anda sudah menginstal Ruby. (Jika Anda belum menginstal Ruby di komputer Anda, download dan silakan instal Ruby terlebih dahulu sebelum Anda mengikuti tutorial ini)</p>
+---
+
+<h2>Pengantar<h2>
+
+<p>Tutorial mini Ruby ini seharusnya bisa diselesaikan dalam waktu kurang dari 20 menit. Dengan asumsi Anda sudah menginstal Ruby. (Jika Anda belum menginstal Ruby di komputer Anda, download dan silakan instal Ruby terlebih dahulu sebelum Anda mengikuti tutorial ini)</p>
+
+<h2>irb, Ruby Interaktif</h2>
+
+<p>Buka IRB.</p>
+
+<ul>
+	<li>Jika Anda menggunakan <strong>Mac OS X</strong> buka Terminal dan ketik irb, kemudian tekan enter.</li>
+	<li>Jika Anda menggunakan <strong>Linux</strong>, buka shell dan ketik irb, kemudian tekan enter.</li>
+	<li>Jika Anda menggunakan <strong>Windows</strong>, buka fxri dari bagian Ruby di Menu Start Anda.</li>
+</ul>
+
+{% highlight ruby linenos %}	
+irb(main):001:0>
+{% endhighlight %}
+<br/>
+
+<p>Ok, sekarang irb sudah dibuka. Sekarang mau apa?</p>
+
+<p>Ketik ini: <strong>"Hello World"</strong></p>
+
+{% highlight ruby linenos %}
+irb(main):001:0> "Hello World"
+=> "Hello World"
+{% endhighlight %}
+<br/>
+
+<h2>Ruby Mematuhi Anda!</h2>
+
+<p>Apa yang baru saja terjadi? Apakah kita baru saja menulis program tersingkat di dunia berupa "Hello World" ? Tidak persis begitu. Baris kedua hanya sekedar cara IRB memberitahu hasil (result) dari ekspresi terakhir yang dievaluasi atau dijalankan. Jika kita ingin print "Hello World" kita perlu tambahkan sedikit:
+
+{% highlight ruby linenos %}
+irb(main):002:0> puts "Hello World" 
+Hello World 
+=> nil
+{% endhighlight %}
+<br/>
+
+<p><strong>puts</strong> merupakan perintah dasar untuk mencetak (print) sesuatu di Ruby. Tetapi kemudian apa artinya <strong>=> nil</strong> ? Artinya adalah result dari ekspresi. puts selalu return nil, yang merupakan value absolut ketiadaan di Ruby.</p>
+
+<h2>Kalkulator Gratis Anda Di Sini</h2>
+
+<p>Dengan IRB kita sudah cukup mempunyai kalkulator dasar:</p>
+
+{% highlight ruby linenos %}
+irb(main):003:0> 3+2
+=> 5
+{% endhighlight %}
+<br/>
+
+<p>Tiga tambah dua. Cukup mudah. Bagaimana dengan tiga kali dua? Anda bisa mencoba dengan langsung mengetikkannya, cukup pendek, tetapi Anda juga bisa mengganti apa saja yang baru saja Anda perintahkan di IRB. Coba tekan <strong>panah-atas</strong> pada keyboard Anda dan lihatlah apakah IRB memunculkan baris <strong>3+2</strong> lagi. Jika Ya, Anda dapat menggunakan panah-kiri untuk berpindah ke setelah tanda <strong>+</strong> kemudian gunakan backspace untuk menggantinya dengan tanda <strong>*</strong>.</p>
+
+{% highlight ruby linenos %}
+irb(main):004:0> 3*2
+=> 6
+{% endhighlight %}
+<br/>
+
+<p>Lanjut, mari kita coba tiga kuadrat:</p>
+
+{% highlight ruby linenos %}
+irb(main):005:0> 3**2
+=> 9
+{% endhighlight %}
+<br/>
+
+<p>Di Ruby, <strong>**</strong> merupakan cara Anda mengatakan "kepada kekuatan dari". Tetapi bagaimana jika Anda ingin melakukannya dengan cara lain dan mendapatkan akar dari suatu bilangan?</p>
+
+{% highlight ruby linenos %}
+irb(main):006:0> Math.sqrt(9)
+=> 3.0
+{% endhighlight %}
+<br/>
+
+<p>Ok, tunggu dulu, bagaimana yang terakhir itu? Jika Anda menebak, "Kode tersebut mencari sqrt (akar) dari 9", berarti Anda benar. Tetapi mari kita lihat lebih dekat. Pertama, apa itu Math ?</p>
+
+<h2>Module, Pengelompokan Kode Menurut Topik</h2>
+
+<p>Math merupakan module built-in (bawaan) untuk matematika. Module punya dua pengaturan di Ruby. Pertama, mengelompokkan metode-metode yang berfungsi mirip di bawah satu nama yang terkenal. Math juga punya metode-metode seperti sin() dan tan().</p>
+
+<p>Selanjutnya adalah <strong>dot</strong> (titik). Apa yang dot lakukan? Dengan dot-lah, Anda bisa mengidentifikasi receiver dari suatu message. Nah, kalau message apa? Dalam hal ini, message adalah <strong>sqrt(9)</strong>, yang artinya pemanggilan metode sqrt, kependekan dari "square root" dengan parameter 9.</p>
+
+<p>Hasil dari pemanggilan metode sqrt ini adalah value 3.0. Anda bisa perhatikan value bukan cuma 3 (tanpa .0). Itu karena sering angka sqrt tidak akan berupa integer, jadi metode sqrt selalu return angka floating-point.</p>
+
+<p>Bagaimana jika kita ingin mengingat hasil dari beberapa perhitungan matematika ini? Caranya assign hasilnya ke variabel.</p>
+
+
+{% highlight ruby linenos %}
+irb(main):007:0> a = 3 ** 2
+=> 9
+irb(main):008:0> b = 4 ** 2
+=> 16
+irb(main):009:0> Math.sqrt(a+b)
+=> 5.0
+{% endhighlight %}
+<br/>
+
+<p>Sehebat kalkulator, kita sudah pergi dari message tradisional Hello World yang biasanya selalu saja kalau ada tutorial untuk pemula berfokus disana… <a href="#">jadi mari kita kembali kesana</a>.</p>
