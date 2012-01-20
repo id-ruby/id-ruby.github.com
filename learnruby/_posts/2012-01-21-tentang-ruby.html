@@ -16,7 +16,7 @@ excerpt: <p>Ruby merupakan bahasa yang seimbang. Pencipta Ruby, Yukihiro "Matz" 
 <p>Matz sering menyebutkan bahwa beliau sedang "mencoba membuat Ruby natural, bukan sederhana," dengan cara membuatnya mirip dengan kehidupan nyata.</p>
 
 <p>Berprinsip pada hal ini, Matz menambahkan:<br/>
-Penampilan Ruby dari luar sederhana, tetapi sangat rumit di bagian dalam, seperti badan manusia kita ini1.
+Penampilan Ruby dari luar sederhana, tetapi sangat rumit di bagian dalam, seperti badan manusia kita ini<sup>1</sup>.
 
 <h2>Tentang Perkembangan Ruby</h2>
 
@@ -24,19 +24,20 @@ Penampilan Ruby dari luar sederhana, tetapi sangat rumit di bagian dalam, sepert
 
 <p>Ruby-Talk, milis utama untuk diskusi Ruby (dalam bahasa Inggris) telah mencapai kisaran 200 email setiap hari.</p>
 
-<p>TIOBE index, yang menghitung perkembangan bahasa-bahasa pemrograman, menempatkan Ruby pada peringkat ke 10 diantara bahasa-bahasa pemrograman di seluruh dunia. Melihat pada perkembangan ini, mereka memperkirakan, "Kesempatan Ruby memasuki peringkat atas 10 besar adalah dalam waktu setengah tahun." Kebanyakan dari perkembangan Ruby beratribut pada terkenalnya software yang ditulis dengan Ruby, terutama framework web Ruby on Rails.</p>
+<p>TIOBE index, yang menghitung perkembangan bahasa-bahasa pemrograman, menempatkan Ruby pada peringkat ke 10 diantara bahasa-bahasa pemrograman di seluruh dunia. Melihat pada perkembangan ini, mereka memperkirakan, "Kesempatan Ruby memasuki peringkat atas 10 besar adalah dalam waktu setengah tahun." Kebanyakan dari perkembangan Ruby beratribut pada terkenalnya software yang ditulis dengan Ruby, terutama framework web Ruby on Rails<sup>2</sup>.</p>
 
 <p>Ruby juga sepenuhnya bebas. Tidak hanya gratis, tetapi juga bebas untuk menggunakan, memodifikasi dan mendistribusikan Ruby.</p>
 
 <h2>Melihat Semua sebagai Obyek</h2>
 
-<p>Pertama kali, Matz melihat bahasa-bahasa lain untuk mencari sintaks yang ideal. Terkenang pencariannya, Matz berkata, "Saya mau bahasa scripting yang lebih hebat daripada Perl dan lebih berorientasi obyek daripada Python3."</p>
+<p>Pertama kali, Matz melihat bahasa-bahasa lain untuk mencari sintaks yang ideal. Terkenang pencariannya, Matz berkata, "Saya mau bahasa scripting yang lebih hebat daripada Perl dan lebih berorientasi obyek daripada Python<sup>3</sup>."</p>
 
 <p>Di Ruby, semua adalah obyek. Setiap informasi dan kode bisa diberi property dan action. Pemrograman berorientasi obyek memanggil property dengan nama variabel instan dan action, yang disebut sebagai metode. Pendekatan murni berorientasi obyek terutama terlihat pada demonstrasi sedikit kode yang diberikan pada number.</p>
 
 {% highlight ruby linenos %}
 5.times { print "Kami *cinta* Ruby -- Ruby sungguh aduhai!" }
 {% endhighlight %}
+<br/>
 
 <p>Di banyak bahasa-bahasa lain, number dan tipe primitif bukan obyek. Ruby mengikuti pengaruh bahasa Smalltalk dengan memberikan metode dan variabel instan pada semua tipe. Ini memudahkan menggunakan Ruby, karena peraturan-peraturan mengenai obyek semua berlaku pada Ruby.</p>
 
@@ -56,6 +57,7 @@ end
 y = 5.plus 6
 # y sekarang adalah 11
 {% endhighlight %}
+<br/>
 
 <p>Demi kemudahan, operator-operator Ruby adalah juga metode. Anda juga bisa mendefinisikan ulang operator.</p>
 
@@ -63,7 +65,7 @@ y = 5.plus 6
 
 <p>Blok Ruby juga dianggap sebagai sumber kekuatan Ruby yang sangat fleksibel. Programmer dapat menyertakan closure pada setiap metode, menjelaskan bagaimana metode yang bersangkutan seharusnya berperilaku. Closure disebut blok dan telah menjadi satu diantara banyak fitur-fitur Ruby yang paling populer pada banyak pendatang baru Ruby dari bahasa-bahasa imperatif lain seperti PHP atau Visual Basic.</p>
 
-<p>Blok terinspirasi dari bahasa-bahasa fungsional. Matz berkata, "Saya ingin menghormati kultur Lisp di closure Ruby4."</p>
+<p>Blok terinspirasi dari bahasa-bahasa fungsional. Matz berkata, "Saya ingin menghormati kultur Lisp di closure Ruby<sup>4</sup>."</p>
 
 {% highlight ruby linenos %}
 search_engines = 
@@ -71,6 +73,7 @@ search_engines =
     "http://www." + engine.downcase + ".com"
   end
 {% endhighlight %}
+<br/>
 
 <p>Pada kode diatas, blok dijelaskan dalam bentuk do ... end. Metode map memberlakukan blok agar menerima array kata-kata (Google, Yahoo dan MSN). Banyak metode-metode lain di Ruby dibiarkan mempunyai hole yang dibuka untuk programmer agar menulis blok mereka sendiri untuk mengisi dengan lebih lengkap apa saja yang seharusnya sebuah metode lakukan.</p>
 
@@ -85,6 +88,7 @@ class MyArray
   include Enumerable
 end
 {% endhighlight %}
+<br/>
 
 <p>Secara umum, Rubyist menganggap ini sebagai cara yang lebih jelas ketimbang multiple inheritance, yang rumit dan bahkan terlalu membatasi.</p>
 
@@ -114,7 +118,9 @@ $var adalah variabel global.</p>
 
 <h3>Referensi</h3>
 
-<p>1. Matz, berbicara di milis Ruby-Talk, 12 Mei 2000.</p>
-<p>2. Lihat situs Ruby on Rails untuk info lebih lengkap.</p>
-<p>3. Matz, An Interview with the Creator of Ruby, (Wawancara dengan Pencipta Ruby, dalam Bahasa Inggris), 29 November 2001.</p>
-<p>4. Matz, Blocks and Closures in Ruby, (Blok dan Closure di Ruby, dalam Bahasa Inggris), 22 Desember 2003.</p>
+<ul>
+	<li>1. Matz, berbicara di milis Ruby-Talk, 12 Mei 2000.</li>
+	<li>2. Lihat situs Ruby on Rails untuk info lebih lengkap.</li>
+	<li>3. Matz, An Interview with the Creator of Ruby, (Wawancara dengan Pencipta Ruby, dalam Bahasa Inggris), 29 November 2001.</li>
+	<li>4. Matz, Blocks and Closures in Ruby, (Blok dan Closure di Ruby, dalam Bahasa Inggris), 22 Desember 2003.</li>
+</ul>
