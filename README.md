@@ -6,7 +6,7 @@ Source code of id-ruby.org
 
 Add the new post in a relevant category folder (e.g. `events/_posts/` or `videos/_posts/`).
 
-Add the date in front of the file name (e.g. `2012-20-12-the-world-will-end-lets-get-wasted.html`).
+Add the date in front of the file name (e.g. `2012-12-20-the-world-will-end-lets-get-wasted.html`).
 
 Use the minimum format shown below. Change the content of `title`, `cat`, and `author`, but keep the `layout` variable value to `post` unless you know what you're doing. For `cat`, use the corresponding folder name that you drop the post into (e.g. `videos` for `videos/_posts/`):
 
