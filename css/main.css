@@ -191,6 +191,10 @@ input, select, textarea {
 	font-size: 0.875em;
 }
 
+pre, code {
+	word-wrap: break-word;
+}
+
 
 /* 5 Common styles
 ------------------------------------------------------------------------------*/
