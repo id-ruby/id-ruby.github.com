@@ -18,13 +18,13 @@ layout: default
           <img src="{{ post.image }}">
         </div>
       {% endif %}
-	  {% if post.excerpt %}
-	    {{ post.excerpt }}
-	  {% else %}
-	    {{ post.content }}
-	  {% endif %}
+    {% if post.excerpt %}
+      {{ post.excerpt }}
+    {% else %}
+      {{ post.content }}
+    {% endif %}
       {% if post.excerpt %}
-		  <a class="more" href="{{ post.url }}">Read more</a>
+      <a class="more" href="{{ post.url }}">Read more</a>
       {% endif %}
     </div>
   </article>
