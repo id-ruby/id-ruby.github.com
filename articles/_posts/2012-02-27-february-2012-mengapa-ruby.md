@@ -19,7 +19,7 @@ Terlepas dari fakta bahwa banyak informasi lowongan ataupun SDM Ruby yang tidak 
   Kembali ke cerita diatas, ketika Suitmedia mulai mengembangkan Bukalapak.com, Nugroho (CTO Bukalapak, eks CTO Suitmedia) menyarankan untuk menggunakan Ruby karena menurutnya Ruby itu menyenangkan dan elegan. Beliau lantas membandingkan contoh kode yang diperlukan dalam bahasa Java dan Ruby untuk membuat beberapa fungsi yang sama sebagai berikut.
 
   Fungsi 1 – Java
-  {% highlight java linenos %}
+  {% highlight java %}
   class ThisIsAClassIDontReallyWantToNameButJavaMakesMe
   {
     public static void main() {
@@ -29,12 +29,12 @@ Terlepas dari fakta bahwa banyak informasi lowongan ataupun SDM Ruby yang tidak 
   {% endhighlight %}
 
   Fungsi 1 – Ruby
-  {% highlight ruby linenos %}
+  {% highlight ruby %}
   puts ‘Hello World’
   {% endhighlight %}
 
   Fungsi 2 – Java
-  {% highlight java linenos %}
+  {% highlight java %}
   import java.io.File;
   import java.io.InputStream;
   // ... declare class, etc., then ...
@@ -52,7 +52,7 @@ Terlepas dari fakta bahwa banyak informasi lowongan ataupun SDM Ruby yang tidak 
   {% endhighlight %}
 
   Fungsi 2 – Ruby
-  {% highlight ruby linenos %}
+  {% highlight ruby %}
   contents = File.read ‘my-file.txt’
   {% endhighlight %}
 
