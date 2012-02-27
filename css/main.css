@@ -45,8 +45,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	display: block;
 }
 
-blockquote, q {
+blockquote {
 	quotes: none;
+	content: "";
+	content: none;
+	font-style: italic;
+	font-size: 105%;
+	font-family: 'rockwell', "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+	color: #666;
 }
 
 blockquote:before, blockquote:after,
