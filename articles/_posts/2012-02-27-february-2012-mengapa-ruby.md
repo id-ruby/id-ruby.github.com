@@ -20,40 +20,48 @@ Terlepas dari fakta bahwa banyak informasi lowongan ataupun SDM Ruby yang tidak 
 
   Fungsi 1 – Java
   <pre>
+    {% highlight java linenos %}
     class ThisIsAClassIDontReallyWantToNameButJavaMakesMe
     {
       public static void main() {
         System.out.println("Hello World");
       }
     }
+    {% endhighlight %}
   </pre>
 
   Fungsi 1 – Ruby
   <pre>
+    {% highlight ruby linenos %}
     puts ‘Hello World’
+    {% endhighlight %}
   </pre>
 
   Fungsi 2 – Java
   <pre>
+    {% highlight java linenos %}
     import java.io.File;
     import java.io.InputStream;
     // ... declare class, etc., then ...
     public byte[] justReadMeAFilePlease() {
-    try {
-      file = new File("my-file.txt");
-      fis = new FileInputStream(file);
-      byte[] b = new byte[(int) file.length()];
-      fis.read(b);
-      return b;
-    } catch (Exception e) {
-      e.printStackTrace();
+      try {
+        file = new File("my-file.txt");
+        fis = new FileInputStream(file);
+        byte[] b = new byte[(int) file.length()];
+        fis.read(b);
+        return b;
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
     }
-    }
+    {% endhighlight %}
   </pre>
 
   Fungsi 2 – Ruby
   <pre>
+    {% highlight ruby linenos %}
     contents = File.read ‘my-file.txt’
+    {% endhighlight %}
   </pre>
 
   Pada akhirnya kami yakin bahwa Ruby memang elegan dan menyenangkan, khususnya bagi programmer yang sepenuhnya berinteraksi (membaca dan menulis) dalam bahasa tersebut. Oleh karena itu, kami sepakat untuk mengembangkan Bukalapak.com dalam bahasa Ruby karena iklim/suasana kerja yang menyenangkan adalah faktor terbesar dalam meningkatkan produktivitas kerja (dan karena itu baik bagi bisnis).
