@@ -7,6 +7,8 @@ excerpt: Berbicara soal pemrograman web, tidak dapat dipungkiri PHP masih merupa
 ---
 
 > Tulisan ini adalah rangkuman presentasi Jakarta.rb yang diberikan oleh Fajrin Rasyid pada Februari 2012.
+> [slide](http://speakerdeck.com/u/xinuc/p/why-ruby-view-from-business-aspect-jakartarb-februari-2012-fajrin-rasyid)
+> [video](https://vimeo.com/37215919)
 
 Berbicara soal pemrograman web, tidak dapat dipungkiri PHP masih merupakan bahasa yang paling populer digunakan, setidaknya di Indonesia. Apabila kita bertanya, “Apakah Anda menguasai Ruby?” secara random kepada programmer web yang kita temui, kemungkinan besar akan menjawab tidak. Saya sendiri baru mengenal Ruby sekitar tiga tahun lalu, ketika [Bukalapak.com](http://www.bukalapak.com), yang merupakan salah satu produk awal kami ([Suitmedia](http://www.suitmedia.com)), mulai dirintis.
 
