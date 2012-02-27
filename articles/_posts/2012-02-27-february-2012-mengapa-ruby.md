@@ -30,7 +30,7 @@ Terlepas dari fakta bahwa banyak informasi lowongan ataupun SDM Ruby yang tidak 
 
   Fungsi 1 – Ruby
   {% highlight ruby %}
-  puts ‘Hello World’
+  puts 'Hello World'
   {% endhighlight %}
 
   Fungsi 2 – Java
@@ -53,7 +53,7 @@ Terlepas dari fakta bahwa banyak informasi lowongan ataupun SDM Ruby yang tidak 
 
   Fungsi 2 – Ruby
   {% highlight ruby %}
-  contents = File.read ‘my-file.txt’
+  contents = File.read "my-file.txt"
   {% endhighlight %}
 
   Pada akhirnya kami yakin bahwa Ruby memang elegan dan menyenangkan, khususnya bagi programmer yang sepenuhnya berinteraksi (membaca dan menulis) dalam bahasa tersebut. Oleh karena itu, kami sepakat untuk mengembangkan Bukalapak.com dalam bahasa Ruby karena iklim/suasana kerja yang menyenangkan adalah faktor terbesar dalam meningkatkan produktivitas kerja (dan karena itu baik bagi bisnis).
