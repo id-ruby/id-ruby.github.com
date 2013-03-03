@@ -23,7 +23,11 @@ layout: nil
    <author>
      <name>{{ post.author }}</name>
    </author>
-   <summary type="html">{{ post.excerpt | xml_escape}}</summary>
+   <summary type="html">
+     {% if post.excerpt != null %}
+       {{ post.excerpt | xml_escape }}
+     {% endif %}
+   </summary>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
