@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+PRODID:-//Facebook//NONSGML Facebook Events V1.0//EN
+X-WR-CALNAME:Jakarta.rb July Meetup
+X-PUBLISHED-TTL:PT12H
+X-ORIGINAL-URL:https://www.facebook.com/events/300956080041604/
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20130701T104650Z
+LAST-MODIFIED:20130701T104650Z
+CREATED:20130701T101316Z
+SEQUENCE:2014
+ORGANIZER;CN=Ahmad Gozali:MAILTO:noreply@facebookmail.com
+ATTENDEE;CN=Nugroho Herucahyono;PARTSTAT=ACCEPTED:https://www.facebook.com/xinuc
+ATTENDEE;CN=Reydi Sutandang;PARTSTAT=ACCEPTED:https://www.facebook.com/reydi
+ATTENDEE;CN=Asep Bagja;PARTSTAT=ACCEPTED:https://www.facebook.com/bepitulaz
+ATTENDEE;CN=Adit On IOs;PARTSTAT=ACCEPTED:https://www.facebook.com/adhitia
+ATTENDEE;CN=Hafiz Badrie Lubis;PARTSTAT=ACCEPTED:https://www.facebook.com/hafizbadrie
+ATTENDEE;CN=Ahmad Gozali;PARTSTAT=ACCEPTED:https://www.facebook.com/segokucing
+ATTENDEE;CN=Ibnul Qoyyim;PARTSTAT=TENTATIVE:https://www.facebook.com/qoyyim
+DTSTART:20130711T120000Z
+DTEND:20130711T140000Z
+UID:e300956080041604@facebook.com
+SUMMARY:Jakarta.rb July Meetup
+LOCATION:Domikado Office\, Jalan Kebayoran L
+ ama No. 8A (Seberang Rumah Sakit P
+ ermata Hijau)
+URL:https://www.facebook.com/events/300956080041604/
+DESCRIPTION:Talks :\nLakshan Perera @laktek - S
+ oftware Engineer\, http://www.nitro
+ us.io (Tentative)\n \n"Do you know R
+ UBY ?"\nTeja Rusyana @tejanium - So
+ ftware Engineer\, http://www.domika
+ do.com\n\nFabian @FabianFabz - Softw
+ are Engineer http://www.bukalapak.
+ com\n\nVenue Geolocation :\nhttps://m
+ aps.google.com/maps/ms?msid=212137
+ 893187732276244.0004de62dfa1ea2935
+ e8a&msa=0&ll=-6.219551\,106.778795&
+ spn=0.00545\,0.009602&dg=feature\n\nd
+ i Google Maps pin-nya nempel di Sl
+ amet Motor\, jangan bingung\, kantor
+  Domikado yang baru memang dulunya
+  bengkel mobil yang baru saja disu
+ lap jadi kantor.\n\nhttps://www.face
+ book.com/events/300956080041604/
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+END:VCALENDAR
