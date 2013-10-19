@@ -46,7 +46,7 @@ excerpt: <p>You don't have to write the title again. Just go straight to the con
 
 <p>Uh huh.</p>
 ```
-    
+
 Fancy for a code snippet? Use the provided liquid extension:
 
 ``` liquid
@@ -61,20 +61,19 @@ For a `video` post, you may want to use `smaller` variable that will be used to 
 
 ## Check It Out Before You Commit
 
-Make sure you have jekyll:
+Make sure you all dependencies is installed:
 
 ``` bash
-gem install jekyll
+$ bundle
 ```
 
 Make sure you have `pygmentize` executable to show highlighted code snippet:
 
 ``` bash
-sudo apt-get install python-pygments
+$ sudo apt-get install python-pygments
 ```
 
-Go to the root dir of this project. Run `jekyll`. Check on `localhost:3000`.
-
+Go to the root dir of this project. Run `bundle exec jekyll serve`. Check on `localhost:4000`.
 
 ## To Do List
 
