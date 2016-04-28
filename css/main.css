@@ -259,9 +259,17 @@ header[role="banner"] {
 }
 
 .logo {
-	float: left;
 	margin-top: 18px;
 	width: 19.25531914893617%;
+}
+
+.logo--website{
+        float: left;
+}
+
+.logo--companies{
+        padding: 5px;
+        display: inline-block;
 }
 
 .logo a {
