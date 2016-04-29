@@ -1,8 +1,6 @@
-auto: true
-server: true
-server_port: 3000
+port: 3000
 destination: ./_site
 permalink: pretty
-pygments: true
+highlighter: pygments
 lsi: false
 paginate: 10
